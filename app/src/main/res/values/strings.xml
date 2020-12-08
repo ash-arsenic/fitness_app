@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">Fitness App</string>
+    <string name="pushups_instruction">"1. Get down on all fours, placing your hands slightly wider than your shoulder.
+2. Straighten your arm and legs.
+3. Lower your body until your chest nearly touches the floor.
+4. Pause then push yourself back up.
+5. Repeat."</string>
+
+    <string name="test"><a href="http://www.google.com">OK</a></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="spinner_data">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+    </string-array>
+
+</resources>

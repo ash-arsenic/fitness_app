@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:id="@+id/user_workout_list_holder"
+    android:background="@drawable/border">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/user_workout_list_image"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/mini_project"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_workout_name"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:text="Plan 1"
+        android:fontFamily="@font/martel_extrabold_text"
+        android:layout_toEndOf="@id/user_workout_list_image"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_workout_time"
+        android:layout_below="@+id/user_workout_name"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="15 Min"
+        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+        app:drawableTint="@android:color/darker_gray"
+        android:fontFamily="@font/martel_semibold_text"
+        android:padding="8dp"
+        android:layout_toEndOf="@+id/user_workout_list_image"
+        android:layout_marginStart="16dp"/>
+
+</RelativeLayout>

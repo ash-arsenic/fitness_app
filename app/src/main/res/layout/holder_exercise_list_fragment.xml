@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/holder_exercise_list_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/border"
+    android:padding="20dp">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/holder_exerciseList_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/mini_project"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/holder_exerciseName_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Push ups"
+        android:fontFamily="@font/martel_extrabold_text"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/holder_exerciseList_image"
+        app:layout_constraintStart_toEndOf="@+id/holder_exerciseList_image"
+        app:layout_constraintTop_toTopOf="@+id/holder_exerciseList_image" />
+
+    <TextView
+        android:id="@+id/holder_exerciseTime_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF5722"
+        android:text="00:30"
+        android:fontFamily="@font/martel_semibold_text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/holder_exerciseName_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/holder_exerciseName_fragment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
